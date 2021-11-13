@@ -242,7 +242,7 @@ public class FoodCollectorAgent : Agent
         }
         if (collision.gameObject.CompareTag("badFood"))
         {
-            Poison();
+            // Poison();
             collision.gameObject.GetComponent<FoodLogic>().OnEaten();
 
             AddReward(-1f);
