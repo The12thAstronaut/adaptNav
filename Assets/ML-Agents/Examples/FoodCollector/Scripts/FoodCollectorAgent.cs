@@ -21,7 +21,7 @@ public class FoodCollectorAgent : Agent
     public float turnSpeed = 300;
 
     // Speed of agent movement.
-    public float moveSpeed = 2;
+    public float moveSpeed = 20;
     public Material normalMaterial;
     public Material badMaterial;
     public Material goodMaterial;

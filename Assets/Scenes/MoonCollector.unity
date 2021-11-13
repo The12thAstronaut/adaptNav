@@ -410,6 +410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VisualFoodCollectorArea
       objectReference: {fileID: 0}
+    - target: {fileID: 1145096862361766, guid: c85b585836e104587b4efdc4d8b9d62b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4307641258646068, guid: c85b585836e104587b4efdc4d8b9d62b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -453,6 +457,11 @@ PrefabInstance:
     - target: {fileID: 4307641258646068, guid: c85b585836e104587b4efdc4d8b9d62b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114422602055470240, guid: c85b585836e104587b4efdc4d8b9d62b,
+        type: 3}
+      propertyPath: numBadFood
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c85b585836e104587b4efdc4d8b9d62b, type: 3}
@@ -716,7 +725,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1145096862361766, guid: c85b585836e104587b4efdc4d8b9d62b, type: 3}
       propertyPath: m_Name
-      value: VisualFoodCollectorArea (1)
+      value: MoonCollectorArea
       objectReference: {fileID: 0}
     - target: {fileID: 4175232870171330, guid: c85b585836e104587b4efdc4d8b9d62b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -773,6 +782,16 @@ PrefabInstance:
     - target: {fileID: 4980287366775932, guid: c85b585836e104587b4efdc4d8b9d62b, type: 3}
       propertyPath: m_LocalPosition.y
       value: -6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114422602055470240, guid: c85b585836e104587b4efdc4d8b9d62b,
+        type: 3}
+      propertyPath: numBadFood
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 114422602055470240, guid: c85b585836e104587b4efdc4d8b9d62b,
+        type: 3}
+      propertyPath: veloctiyScalar
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c85b585836e104587b4efdc4d8b9d62b, type: 3}
