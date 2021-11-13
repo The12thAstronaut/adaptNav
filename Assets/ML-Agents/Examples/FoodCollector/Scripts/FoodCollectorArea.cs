@@ -1,5 +1,6 @@
 using UnityEngine;
 using Unity.MLAgentsExamples;
+using System.Collections;
 
 public class FoodCollectorArea : Area
 {
@@ -26,10 +27,21 @@ public class FoodCollectorArea : Area
         }
     }
 
-    public void ResetFoodArea(GameObject[] agents)
+    public IEnumerator ResetFoodArea(GameObject[] agents)
     {
+        CreateFood(numBadFood, badFood);
+  
+        print("Hiding agents");
         foreach (GameObject agent in agents)
         {
+            agent.SetActive(false);
+        }
+
+        yield return new WaitForSeconds(10);
+        print("Spawning agents");
+        foreach (GameObject agent in agents)
+        {
+            agent.SetActive(true);
             if (agent.transform.parent == gameObject.transform)
             {
                 agent.transform.position = new Vector3(Random.Range(-range, range), 2f,
@@ -41,7 +53,6 @@ public class FoodCollectorArea : Area
 
         // No longer spawn good food, only poison
         // CreateFood(numFood, food);
-        CreateFood(numBadFood, badFood);
     }
 
     public override void ResetArea()
